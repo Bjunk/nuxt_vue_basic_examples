@@ -1,0 +1,37 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/pablo.aravena/dev/nuxt/dxs/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_530123b2"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/pablo.aravena/dev/nuxt/dxs/pages/login/index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_59e9cc8e"
+  },
+  {
+    "name": "signin",
+    "path": "/signin",
+    "component": "/Users/pablo.aravena/dev/nuxt/dxs/pages/signin/index.vue",
+    "chunkName": "pages/signin/index",
+    "_name": "_ce0e0f9a"
+  },
+  {
+    "name": "solutions",
+    "path": "/solutions",
+    "component": "/Users/pablo.aravena/dev/nuxt/dxs/pages/solutions/index.vue",
+    "chunkName": "pages/solutions/index",
+    "_name": "_67dcbe02"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/pablo.aravena/dev/nuxt/dxs/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1539c734"
+  }
+]

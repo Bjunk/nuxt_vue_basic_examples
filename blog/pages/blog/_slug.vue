@@ -1,5 +1,5 @@
 <template>
-<div class="container bg-gray-200 mx-auto px-4 mt-5">
+<div class="container mx-auto px-4 mt-5">
   <article class="text-justify">
     <h1 class="text-5xl subpixel-antialiased py-4">{{ article.title }}</h1>
     <p class="font-thin">{{ article.description }}</p>
@@ -8,7 +8,9 @@
 
     <nuxt-content :document="article" />
 
-    <author :author="article.author" />
+    <p><author :author="article.author" /></p>
+
+    <p class="mt-5"><prev-next :prev="prev" :next="next" /></p>
   </article>
 </div>
 </template>
@@ -18,7 +20,14 @@
     async asyncData({ $content, params }) {
       const article = await $content('articles', params.slug).fetch()
 
-      return { article }
+      const [prev, next] = await $content('articles')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+
+    return { article, prev, next }
+
     },
     methods: {
     formatDate(date) {

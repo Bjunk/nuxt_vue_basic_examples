@@ -8,4 +8,5 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Author>` | `<author>` (components/Author.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
+- `<PrevNext>` | `<prev-next>` (components/PrevNext.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)

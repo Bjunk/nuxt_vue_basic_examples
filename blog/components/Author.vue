@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="author.image" />
+    <img class="rounded-full md:bg-gradient-to-r w-10" :src="author.image" />
     <div>
       <p>Author: {{ author.name }}</p>
       <p>{{ author.bio }}</p>

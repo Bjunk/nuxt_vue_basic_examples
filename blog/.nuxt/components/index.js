@@ -1,5 +1,6 @@
 export { default as Author } from '../../components/Author.vue'
 export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
+export { default as PrevNext } from '../../components/PrevNext.vue'
 export { default as Tutorial } from '../../components/Tutorial.vue'
 
 // nuxt/nuxt.js#8607

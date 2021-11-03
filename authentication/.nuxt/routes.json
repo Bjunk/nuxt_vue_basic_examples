@@ -1,0 +1,23 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/login/index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_00447d06"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_39005022"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2a70493a"
+  }
+]

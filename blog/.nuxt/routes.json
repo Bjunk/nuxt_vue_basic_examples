@@ -3,14 +3,12 @@
     "name": "blog-slug",
     "path": "/blog/:slug?",
     "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/blog/pages/blog/_slug.vue",
-    "chunkName": "pages/blog/_slug",
-    "_name": "_4b827e1c"
+    "chunkName": "pages/blog/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/blog/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_3971aa4d"
+    "chunkName": "pages/index"
   }
 ]

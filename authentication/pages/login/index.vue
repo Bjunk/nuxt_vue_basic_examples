@@ -1,13 +1,13 @@
 <template>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-4 is-offset-4">
+  <section class="">
+    <div class="lg:flex">
+      <div class="lg:w-1/2 xl:max-w-screen-sm">
+        <div class="py-12 gb-indigo-100 lg:bg-white flex justify-center lg:justify-start lg:px-12">
           <h2 class="title has-text-centered">Welcome back!</h2>
 
           <Notification :message="error" v-if="error"/>
 
-          <form method="post" @submit.prevent="login">
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="post" @submit.prevent="login">
 
             <div class="field">
               <label class="label">Email</label>
@@ -15,7 +15,7 @@
               <div class="control">
                 <input
                   type="email"
-                  class="input"
+                  class="shadow appearance-none border border-grey-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                   name="email"
                   v-model="email"
                 >
@@ -28,7 +28,7 @@
               <div class="control">
                 <input
                   type="password"
-                  class="input"
+                  class="shadow appearance-none border border-grey-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                   name="password"
                   v-model="password"
                 >
@@ -36,7 +36,7 @@
             </div>
 
             <div class="control">
-              <button type="submit" class="button is-dark is-fullwidth">Log In</button>
+              <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Log In</button>
             </div>
           </form>
 

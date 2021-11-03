@@ -68,6 +68,7 @@
 <script>
 import Notification from '~/components/Notification';
 export default {
+  auth: false,
   middleware: 'guest',
   components: {
     Notification,

@@ -51,15 +51,15 @@ export default function (ctx, inject) {
   },
   "endpoints": {
     "login": {
-      "url": "/api/auth/login",
+      "url": "/session",
       "method": "post"
     },
     "logout": {
-      "url": "/api/auth/logout",
+      "url": "/session/logout",
       "method": "post"
     },
     "user": {
-      "url": "/api/auth/user",
+      "url": "/session/user",
       "method": "get"
     }
   },

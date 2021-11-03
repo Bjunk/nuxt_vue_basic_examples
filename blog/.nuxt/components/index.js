@@ -1,3 +1,4 @@
+export { default as Author } from '../../components/Author.vue'
 export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
 export { default as Tutorial } from '../../components/Tutorial.vue'
 

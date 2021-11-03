@@ -1,17 +1,19 @@
 <template>
-<div class="container mx-auto px-4 mt-5">
+<div class="container bg-gray-200 mx-auto px-4 mt-5">
   <article class="text-justify">
     <h1 class="text-5xl subpixel-antialiased py-4">{{ article.title }}</h1>
     <p class="font-thin">{{ article.description }}</p>
-    <img :src="article.img" :alt="article.alt" />
+    <img class="rounded-3xl" :src="article.img" :alt="article.alt" />
     <p class="text-base py-5">Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
     <nuxt-content :document="article" />
-    <p class="text-base text-right py-5">{{ article.author }}</p>
+
+    <author :author="article.author" />
   </article>
 </div>
 </template>
 <script>
+
   export default {
     async asyncData({ $content, params }) {
       const article = await $content('articles', params.slug).fetch()

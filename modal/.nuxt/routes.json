@@ -1,0 +1,8 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/modal/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

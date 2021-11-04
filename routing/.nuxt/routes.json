@@ -1,0 +1,59 @@
+[
+  {
+    "name": "mountains",
+    "path": "/mountains",
+    "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/mountains.vue",
+    "chunkName": "pages/mountains",
+    "_name": "_390a867e"
+  },
+  {
+    "path": "/parent",
+    "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/parent.vue",
+    "chunkName": "pages/parent",
+    "children": [
+      {
+        "name": "parent",
+        "path": "",
+        "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/parent/index.vue",
+        "chunkName": "pages/parent/index",
+        "_name": "_476b17e5"
+      },
+      {
+        "name": "parent-child",
+        "path": "child",
+        "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/parent/child.vue",
+        "chunkName": "pages/parent/child",
+        "_name": "_71e0af2f"
+      },
+      {
+        "name": "parent-child2",
+        "path": "child2",
+        "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/parent/child2.vue",
+        "chunkName": "pages/parent/child2",
+        "_name": "_6b663fda"
+      }
+    ],
+    "_name": "_a6907a3c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_22c2bc6c"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/_slug.vue",
+    "chunkName": "pages/_slug",
+    "_name": "_262ffefc"
+  },
+  {
+    "name": "continent-mountain",
+    "path": "/:continent/:mountain?",
+    "component": "/Users/alejandra/Documents/PORTALHAUS/proyecto-vue/pages/_continent/_mountain.vue",
+    "chunkName": "pages/_continent/_mountain",
+    "_name": "_6c0328ca"
+  }
+]

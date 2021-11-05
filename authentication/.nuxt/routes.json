@@ -3,18 +3,28 @@
     "name": "login",
     "path": "/login",
     "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/login/index.vue",
-    "chunkName": "pages/login/index"
+    "chunkName": "pages/login/index",
+    "_name": "_00447d06"
+  },
+  {
+    "name": "profile",
+    "path": "/profile",
+    "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/profile/index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_134ce17d"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/register/index.vue",
-    "chunkName": "pages/register/index"
+    "chunkName": "pages/register/index",
+    "_name": "_f43695b6"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/pablo.aravena/dev/nuxt/nuxt_vue_basic_examples/authentication/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_2a70493a"
   }
 ]

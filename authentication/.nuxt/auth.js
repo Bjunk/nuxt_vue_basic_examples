@@ -17,7 +17,7 @@ export default function (ctx, inject) {
   "watchLoggedIn": true,
   "redirect": {
     "login": "/login",
-    "logout": "/",
+    "logout": "/login",
     "home": "/",
     "callback": "/login"
   },
@@ -44,22 +44,23 @@ export default function (ctx, inject) {
   $auth.registerStrategy('local', new LocalScheme($auth, {
   "token": {
     "property": "token",
-    "global": true
+    "global": true,
+    "type": "Bearer"
   },
   "user": {
     "property": "user"
   },
   "endpoints": {
     "login": {
-      "url": "/session",
+      "url": "/request-token/",
       "method": "post"
     },
     "logout": {
-      "url": "/session/logout",
+      "url": "/session/logout/",
       "method": "post"
     },
     "user": {
-      "url": "/session/user",
+      "url": "/session/user/",
       "method": "get"
     }
   },

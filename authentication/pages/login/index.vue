@@ -18,7 +18,7 @@
                   class="shadow appearance-none border border-grey-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                   name="email"
                   v-model="email"
-                >
+                required>
               </div>
             </div>
 
@@ -31,7 +31,7 @@
                   class="shadow appearance-none border border-grey-300 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                   name="password"
                   v-model="password"
-                >
+                required>
               </div>
             </div>
 

@@ -45,19 +45,23 @@ export default {
                     property: 'token',
                     global: true,
                     // required: true,
-                    // type: 'Bearer'
+                    type: 'Bearer'
                 },
                 user: {
                     property: 'user',
                     // autoFetch: true
                 },
                 endpoints: {
-                    login: { url: '/session', method: 'post' },
-                    logout: { url: '/session/logout', method: 'post' },
-                    user: { url: '/session/user', method: 'get' }
+                    login: { url: '/request-token/', method: 'post' },
+                    logout: { url: '/session/logout/', method: 'post' },
+                    user: { url: '/session/user/', method: 'get' }
                 }
             }
-        }
+        },
+        redirect: {
+            logout: '/login',
+        },
+        watchLoggedIn: true,
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -68,7 +72,25 @@ export default {
     },
 
     // Authentication URL
+
     axios: {
-        baseURL: 'http://localhost:80'
+        baseURL: 'https://auth.dxs.cloud',
+        /*
+        headers: {
+            'Access-Control-Allow-Origin': 'https://auth.dxs.cloud',
+            'Vary': 'Origin',
+        }*/
     }
+
+    /*
+    axios: {
+        proxy: true
+    },
+
+    proxy: {
+        '/request-token/': { target: 'https://auth.dxs.cloud/', changeOrigin: true },
+        '/session/logout/': { target: 'https://auth.dxs.cloud/', changeOrigin: true },
+        '/session/user/': { target: 'https://auth.dxs.cloud/', changeOrigin: true }
+    }
+    */
 }
